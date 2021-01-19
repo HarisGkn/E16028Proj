@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+
+<form action="/spInvoice_Search/Index" method="post">
+
+    <div class="form-horizontal">
+        <h4>Invoice Search</h4>
+        <hr />
+
+        <div class="form-group">
+            <label for="cusName" class="control-label col-md-2">Customer Name</label>
+            <div class="col-md-10">
+                <input id="cusName" type="text" name="cusName" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="empName" class="control-label col-md-2">Employee Name</label>
+            <div class="col-md-10">
+                <input id="empName" type="text" name="empName" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="time1" class="control-label col-md-2">From(date and time)</label>
+            <div class="col-md-10">
+                <input id="time1" type="datetime" name="time1" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="time2" class="control-label col-md-2">To(date and time)</label>
+            <div class="col-md-10">
+                <input id="time2" type="datetime" name="time2" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+

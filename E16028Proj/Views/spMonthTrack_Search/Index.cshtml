@@ -1,0 +1,50 @@
+﻿@model IEnumerable<E16028Proj.Models.spMonthTrack_Search_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<hr />
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TrackName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArtistName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quarter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.X)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrackName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtistName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quarter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.X)
+            </td>
+
+        </tr>
+    }
+</table>

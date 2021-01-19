@@ -1,0 +1,55 @@
+﻿@model IEnumerable<E16028Proj.Models.spInvoice_Search_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<hr />
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoiceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoiceDate)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.InvoiceId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerFirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CustomerLastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EmployeeFirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EmployeeLastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.InvoiceDate)
+    </td>
+
+</tr>
+    }
+</table>

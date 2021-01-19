@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br>
+<br>
+<br>
+<div class="container">
+    <div>
+    <button class="btn">@Html.ActionLink("List of Artists", "Index", "Artists")</button>
+    <button class="btn">@Html.ActionLink("List of Customers", "Index", "Customers")</button>
+    <button class="btn">@Html.ActionLink("List of Employees", "Index", "Employees")</button>
+    <button class="btn">@Html.ActionLink("List of Genres", "Index", "Genres")</button>
+    <button class="btn">@Html.ActionLink("List of InvoiceLines", "Index", "InvoiceLines")</button>
+    <br />
+    <button class="btn">@Html.ActionLink("List of Invoices", "Index", "Invoices")</button>
+    <button class="btn">@Html.ActionLink("List of InvoiceStatistics", "Index", "InvoiceStatistics")</button>
+    <button class="btn">@Html.ActionLink("List of MediaTypes", "Index", "MediaTypes")</button> 
+    <button class="btn">@Html.ActionLink("List of Playlists", "Index", "Playlists")</button>
+    <button class="btn">@Html.ActionLink("List of Tracks", "Index", "Tracks")</button>
+    <div/>
+    <br/>
+    <div>
+        <button class="btn">@Html.ActionLink("spArtists_Search", "Create", "spArtists_Search")</button>
+        <button class="btn">@Html.ActionLink("spCustomer_Search", "Create", "spCustomer_Search")</button>
+        <button class="btn">@Html.ActionLink("spGenre_Search", "Create", "spGenre_Search")</button>
+        <button class="btn">@Html.ActionLink("spTrack_Search", "Create", "spTrack_Search")</button>
+        <br/>
+        <button class="btn">@Html.ActionLink("spInvoice_Search", "Create", "spInvoice_Search")</button>
+        <button class="btn">@Html.ActionLink("spMonthTrack_Search", "Create", "spMonthTrack_Search")</button>
+        <button class="btn">@Html.ActionLink("spInvStat_Search", "Create", "spInvStat_Search")</button>
+    </div>
+</div>

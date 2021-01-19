@@ -1,0 +1,43 @@
+﻿@model IEnumerable<E16028Proj.Models.spInvStat_Search_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<hr />
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GenreId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrackId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalTrackCharge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeCreated)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrackId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalTrackCharge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeCreated)
+            </td>
+        </tr>
+    }
+</table>
